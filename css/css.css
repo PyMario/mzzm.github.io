@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  height: 100%;
+}
+body{
+  border:0;
+  margin:0;
+  padding:0;
+  font-family:"微软雅黑";
+  font-size:14px;
+  color:#333;
+  background:url(../img/bg_.png) no-repeat;
+}
+.djs_{
+  width:100%;
+  height:925px;
+  background-size:100% 925px;
+}
+.countdown-container {
+  position: relative;
+  top: 50px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(0%);
+}
+.clock-item .inner {
+  height: 0px;
+  padding-bottom: 100%;
+  position: relative;
+  width: 100%;
+}
+.clock-canvas {
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 50%;
+  height: 0px;
+  padding-bottom: 100%;
+}
+.text {
+  color: #fff;
+  font-size: 60px;
+  margin-top: -32px;
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+  width: 100%;
+}
+
+.mzjy{
+  width: 1400px;
+  height: 200px;
+  font-size: 150px;
+  color: #000;
+  font-family:'NaiYoueea5ca51a1b309';
+  margin: 20px auto;
+  color: #FFCCCC;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>高考倒计时!</title>
+    <link href="./css/css.css" rel="stylesheet" type="text/css">
+    <link href='http://cdn.webfont.youziku.com/webfonts/nomal/111369/46719/5a2e632af629db18f8754cb3.css' rel='stylesheet' type='text/css' />
+</head>
+<body>
+<div class="djs_">
+    <div class="mzjy">
+      沐子最美, 沐子加油!
+    </div>
+    <div class="countdown countdown-container container" id="CountMsg">
+        <div class="clock row" style="width:1200px; margin:0 auto;">
+            <div class="clock-item clock-days countdown-time-value col-sm-6 col-md-3" style="width:250px; margin-right:2.2%; float:left;">
+                <div class="wrap">
+                    <div class="inner">
+                        <div id="canvas-days" class="clock-canvas"></div>
+                        <div class="text">
+                            <span id="t_d"></span> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clock-item clock-hours countdown-time-value col-sm-6 col-md-3"  style="width:250px; margin-right:2.2%; float:left;">
+                <div class="wrap">
+                    <div class="inner">
+                        <div id="canvas-hours" class="clock-canvas"></div>
+                        <div class="text">
+                            <span id="t_h"></span> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clock-item clock-minutes countdown-time-value col-sm-6 col-md-3" style="width:250px; margin-right:2.2%; float:left;">
+                <div class="wrap">
+                    <div class="inner">
+                        <div id="canvas-minutes" class="clock-canvas"></div>
+                        <div class="text">
+                            <span id="t_m"></span> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clock-item clock-seconds countdown-time-value col-sm-6 col-md-3" style="width:250px; float:left;">
+                <div class="wrap">
+                    <div class="inner">
+                        <div id="canvas-seconds" class="clock-canvas"></div>
+                        <div class="text">
+                            <span id="t_s"></span> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function getRTime(){
+            var EndTime= new Date('2018/06/07 09:00:00');
+            var NowTime = new Date();
+            var t =EndTime.getTime() - NowTime.getTime();
+            var d=Math.floor(t/1000/60/60/24);
+            var h=Math.floor(t/1000/60/60%24);
+            var m=Math.floor(t/1000/60%60);
+            var s=Math.floor(t/1000%60);
+            document.getElementById("t_d").innerHTML = d + " 天";
+            document.getElementById("t_h").innerHTML = h + " 时";
+            document.getElementById("t_m").innerHTML = m + " 分";
+            document.getElementById("t_s").innerHTML = s + " 秒";
+        }
+        getRTime();
+        setInterval(getRTime,10);
+    </script>
+</div>
+</body>
+</html>
