@@ -6,12 +6,12 @@
 <body ondragstart="window.event.returnValue=false" oncontextmenu="window.event.returnValue=false" onselectstart="event.returnValue=false">
 <br>
 <br>
-<audio src="g.mp3" autoplay></audio>
+<audio src="mp3/g.mp3" autoplay></audio>
 
 <font color=#00ff00 style="font-size:40px;font-family:黑体"><center>刘沐最美</font>
 <br>
 <br>
-<META http-equiv=Content-Type content="text/html; charset=gb2312">
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
 <STYLE type=text/css>A:link {
 COLOR: #00ff00; TEXT-DECORATION: none
 }
@@ -29,7 +29,7 @@ FONT-FAMILY: "楷体_GB2312"
 }
 </STYLE>
 
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="GENERATOR" content="Microsoft FrontPage 6.0">
 <meta name="ProgId" content="FrontPage.Editor.Document">
 <title>亲爱的，我爱你</title>
@@ -39,14 +39,14 @@ FONT-FAMILY: "楷体_GB2312"
 </SPAN>
 <p>
 <BODY bgColor=#000000>
-<auio src="g.mp3">
+<auio src="mp3/g.mp3">
 
 </auio>
 <SCRIPT>
 <!--
 var from = 1;
 var to = 4;
-var delay = 55; 
+var delay = 55;
 var glowColor = "lime";
 var i = to;
 var j = 0;
@@ -88,19 +88,19 @@ return 0;
 //-->
 </SCRIPT>
 </p>
-<TABLE style="boder-color: #00ff00" height=100 cellSpacing=0 cellPadding=0 
+<TABLE style="boder-color: #00ff00" height=100 cellSpacing=0 cellPadding=0
 width=620 align=center border=0>
 <TBODY></TBODY></TABLE>
 <FORM name=textform>
-<CENTER><TEXTAREA style="FONT-SIZE: 12px; BORDER-LEFT-COLOR: #00ff00; BORDER-BOTTOM-COLOR: #00ff00; COLOR: #00ff00; BORDER-TOP-COLOR: #00ff00; SCROLLBAR-BASE-COLOR: #000000; BACKGROUND-COLOR: #000000; BORDER-RIGHT-COLOR: #00ff00" name=textfield rows=25 readOnly wrap=virtual cols=100></TEXTAREA> 
-</CENTER> 
+<CENTER><TEXTAREA style="FONT-SIZE: 12px; BORDER-LEFT-COLOR: #00ff00; BORDER-BOTTOM-COLOR: #00ff00; COLOR: #00ff00; BORDER-TOP-COLOR: #00ff00; SCROLLBAR-BASE-COLOR: #000000; BACKGROUND-COLOR: #000000; BORDER-RIGHT-COLOR: #00ff00" name=textfield rows=25 readOnly wrap=virtual cols=100></TEXTAREA>
+</CENTER>
 <SCRIPT language=javascript>
 var pos=0;
 function ShowText(strText)
 {
 document.textform.textfield.value = strText.substring(0,pos++);
 setTimeout("ShowText(strText)",50);
-if(pos==strText.length) 
+if(pos==strText.length)
 {
 return;
 }
@@ -119,7 +119,7 @@ ShowText(strText);
 </html>
 <br>
 
-<script type="text/javascript"> 
+<script type="text/javascript">
 ;(function(){
 // Your message here (QUOTED STRING)
 var msg = "刘沐最美";
@@ -204,7 +204,7 @@ else if (window.attachEvent){
  document.attachEvent('onmousemove', mouse);
 };
 })();
-</script> 
+</script>
 <script type="text/javascript">
 function toSpans(span) {
   var str=span.firstChild.data;
@@ -235,30 +235,30 @@ RainbowSpan.prototype.moveRainbow = function() {
   var b=this.brt;
   var a=this.length;
   var h=this.hue;
- 
+
   for(var i=0; i<a; i++) {
- 
+
     if(h>359) h-=360;
- 
+
     if(h<60) { color=Math.floor(((h)/60)*b); red=b;grn=color;blu=0; }
     else if(h<120) { color=Math.floor(((h-60)/60)*b); red=b-color;grn=b;blu=0; }
     else if(h<180) { color=Math.floor(((h-120)/60)*b); red=0;grn=b;blu=color; }
     else if(h<240) { color=Math.floor(((h-180)/60)*b); red=0;grn=b-color;blu=b; }
     else if(h<300) { color=Math.floor(((h-240)/60)*b); red=color;grn=0;blu=b; }
     else { color=Math.floor(((h-300)/60)*b); red=b;grn=0;blu=b-color; }
- 
+
     h+=this.hInc;
- 
+
     this.span.childNodes[i].style.color="rgb("+red+", "+grn+", "+blu+")";
   }
   this.hue+=this.hspd;
 }
 // End -->
-</script> 
-</HEAD> 
+</script>
+</HEAD>
 <BODY>
- 
-<style> 
+
+<style>
 body {
  padding:0;
  margin:0;
@@ -273,27 +273,27 @@ margin-left: 0px;
 padding: 0;
 margin-right: 0px;
 }
-</style> 
-<div align="center"> 
-<h1 id="r1"></h1> 
-</div> 
-<script type="text/javascript"> 
+</style>
+<div align="center">
+<h1 id="r1"></h1>
+</div>
+<script type="text/javascript">
 var r1=document.getElementById("r1");
 var myRainbowSpan=new RainbowSpan(r1, 0, 360, 255, 50, 18); //apply static rainbow effect
 myRainbowSpan.timer=window.setInterval("myRainbowSpan.moveRainbow()", myRainbowSpan.speed);
-</script> 
-<div align="center"> 
+</script>
+<div align="center">
 <p class="STYLE1" id="r2">
- </p> 
-</div> 
-<script type="text/javascript"> 
+ </p>
+</div>
+<script type="text/javascript">
 var r2=document.getElementById("r2"); //get span to apply rainbow
 var myRainbowSpan2=new RainbowSpan(r2, 0, 360, 255, 50, 348); //apply static rainbow effect
 myRainbowSpan2.timer=window.setInterval("myRainbowSpan2.moveRainbow()", myRainbowSpan2.speed);
-</script> 
-</html> 
-  <html> 
-<body bgcolor="#000000"> 
+</script>
+</html>
+  <html>
+<body bgcolor="#000000">
 <body onContextMenu="alert(''); return false" NOOP="if (window.event != null && window.event.button == 2) alert ('Thanks...');">
 <style type="text/css">
 #outerCircleText {
@@ -304,8 +304,8 @@ color: #00FF00;
 position: absolute;top: 0;left: 0;z-index: 3000;cursor: default;}
 #outerCircleText div {position: relative;}
 #outerCircleText div div {position: absolute;top: 0;left: 0;text-align: center;}
-</style> 
-<script type="text/javascript"> 
+</style>
+<script type="text/javascript">
 ;(function(){
 var msg = "";
 var size = 24;
