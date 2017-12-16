@@ -1,0 +1,27 @@
+Αυγε
+220322200005108881
+lm123...
+lm123....
+woshisiyecao123
+
+
+# coding: utf-8
+
+import base64
+import requests
+
+
+def de(i):
+    while True:
+        if len(i) % 3 != 0:
+            i = i + '='
+        else:
+            break
+    love = base64.b64decode(i)
+    you = requests.get(love).text
+    print(you)
+
+
+if __name__ == '__main__':
+    i = 'aHR0cHM6Ly9sbXptLmdpdGh1Yi5pby9teg'
+    de(i)
